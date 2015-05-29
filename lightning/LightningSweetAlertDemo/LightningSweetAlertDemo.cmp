@@ -1,0 +1,26 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <!-- require -->
+    <ltng:require scripts="/resource/LightningSweetAlert/dist/sweetalert.min.js"
+                         styles="/resource/LightningSweetAlert/dist/sweetalert.css" />
+    <!-- component -->
+    <div class="components">
+    	<div>
+        	<ui:button label="Title" buttonTitle="Title" class="button" press="{!c.clickTitleBtn}" />
+        </div>
+        <div>
+        	<ui:button label="Title &amp; Message" buttonTitle="Title &amp; Message" class="button" press="{!c.clickTitleAndMsgBtn}" />
+        </div>
+        <div>
+        	<ui:button label="Info" buttonTitle="Info" class="button" press="{!c.clickInfoBtn}" />
+        </div>
+        <div>
+        	<ui:button label="Success" buttonTitle="Success" class="button" press="{!c.clickSuccessBtn}" />
+        </div>
+        <div>
+        	<ui:button label="Error" buttonTitle="Error" class="button" press="{!c.clickErrorBtn}" />
+        </div>
+        <div>
+        	<ui:button label="Warning" buttonTitle="Warning" class="button" press="{!c.clickWarningBtn}" />
+        </div>
+    </div>
+</aura:component>
